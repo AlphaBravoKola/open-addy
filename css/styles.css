@@ -1,0 +1,44 @@
+/* Additional custom styles beyond Tailwind */
+
+/* Custom focus styles */
+:focus {
+  outline: 2px solid #3b82f6;
+  outline-offset: 2px;
+}
+
+/* Custom animations */
+.hover-lift {
+  transition: transform 0.2s ease;
+}
+
+.hover-lift:hover {
+  transform: translateY(-2px);
+}
+
+/* Custom responsive adjustments */
+@media (max-width: 640px) {
+  .container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
+/* Custom button effects */
+button {
+  transition: all 0.2s ease;
+}
+
+/* Additional styles for the search box */
+#search-input:focus {
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.3);
+}
+
+/* Additional animation for feature cards */
+.bg-white {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.bg-white:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.05);
+}
